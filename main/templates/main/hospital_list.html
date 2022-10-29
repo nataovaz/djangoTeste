@@ -1,0 +1,33 @@
+<body>
+    <div>
+        <h1 align = 'center'>Hospitais Cadastradas</h1>
+    </div>
+    <div>
+        <form method="get">
+            
+        </form>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nome dos hospitais </th>
+                    
+                </tr>
+                
+            </thead>
+            <tbody>
+                {% for Hospital in object_list %}
+                <tr>
+                    <td>
+
+                            <a>{{Hospital.name}}</a>
+
+                    </td>
+                   
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
